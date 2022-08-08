@@ -1,0 +1,229 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Mulish', sans-serif;
+  font-size: 10px;
+  background-color: #fff;
+}
+
+.header {
+  margin: 3.5rem 10.5rem 28.6rem 8rem;
+  padding-top: 1rem;
+}
+
+.top__wrapper {
+  position: fixed;
+  width: 90%;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__top__logo {
+  margin-left: 11rem;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 3.5rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #B8BECD;
+}
+
+.nav__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nav__link:active {
+  color: #202336;
+  font-weight: 500;
+}
+
+.btn {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #FB8F1D;
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.btn--white {
+  color: #FB8F1D;
+  background-color: #fff;
+  padding: .8rem 4.6rem;
+  margin-right: 1.8rem;
+}
+
+.btn--yellow {
+  color: #fff;
+  background-color: #FB8F1D;
+  padding: .8rem 3.6rem;
+}
+
+.btn--long {
+  padding: 0 6rem;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 50px;
+}
+
+.header__intro {
+  padding-top: 167px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.intro__title {
+  width: 35.6rem;
+  height: 16rem;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  color: #202336;
+  margin-bottom: 7.4rem;
+}
+
+.finder__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #202336;
+}
+
+.finder__title::after {
+  display: block;
+  content: '';
+  width: 32px;
+  height: 2px;
+  background: #202336;
+  border-radius: 4px;
+  margin-top: 2.1rem;
+}
+
+.nav__finder > ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (22rem)[2];
+      grid-template-columns: repeat(2, 22rem);
+  grid-gap: 3rem;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  max-width: 47rem;
+  height: 14rem;
+  margin-top: 4.8rem;
+  margin-bottom: 5rem;
+}
+
+.nav__finder__item {
+  display: block;
+  padding: 2.1rem 12rem 2.1rem 3rem;
+  border: 0.8px solid #AFB0B9;
+  border-radius: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4A4C53;
+  position: relative;
+}
+
+.nav__finder__item::after {
+  content: url(../image/Vector.svg);
+  display: block;
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  bottom: 2rem;
+}
+
+.nav__finder__item:hover {
+  cursor: pointer;
+}
+
+.nav__finder__item:hover .sub__menu {
+  display: block;
+}
+
+.sub__menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 90%;
+  width: 30rem;
+  height: 20rem;
+  z-index: 3;
+  overflow: auto;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.sub__menu__item {
+  display: block;
+  padding: 2.1rem 12rem 2.1rem 3rem;
+  border: 0.8px solid #AFB0B9;
+  border-radius: 6px;
+  background: #FB8F1D;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */
