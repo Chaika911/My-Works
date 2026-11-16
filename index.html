@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works — Vitalii Chaika</title>
+    <meta name="description" content="Responsive landing page layouts by Vitalii Chaika: HTML, CSS/SCSS, JavaScript.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(90deg, #2A2D32 5.15%, #131313 89.49%);
+            color: #F2F2F2;
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 34px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #70c6f8 0.54%, #005696 145.61%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro {
+            margin: 12px 0 35px;
+            color: #a9adb3;
+            line-height: 1.5;
+        }
+
+        .intro a {
+            color: #70c6f8;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background: #202122;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .3);
+            transition: transform .35s ease, box-shadow .35s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, .45), 0 0 0 1px rgba(17, 168, 253, .5);
+        }
+
+        .card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .card__body {
+            padding: 16px 20px 20px;
+        }
+
+        .card__title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .card__tags {
+            margin-top: 6px;
+            font-size: 13px;
+            color: #a9adb3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Works</h1>
+        <p class="intro">
+            Responsive landing pages built from designs while studying frontend development (2022–2023).<br>
+            More about me: <a href="https://chaika911.github.io/myCV/">chaika911.github.io/myCV</a>
+        </p>
+
+        <div class="grid">
+            <a class="card" href="./MoGo/index-mogo.html">
+                <img src="./preview/mogo.jpg" alt="MoGo" loading="lazy">
+                <div class="card__body">
+                    <div class="card__title">MoGo</div>
+                    <div class="card__tags">HTML · CSS</div>
+                </div>
+            </a>
+            <a class="card" href="./Jabson/index.html">
+                <img src="./preview/jabson.jpg" alt="Jabson" loading="lazy">
+                <div class="card__body">
+                    <div class="card__title">Jabson</div>
+                    <div class="card__tags">HTML · SCSS · JavaScript</div>
+                </div>
+            </a>
+            <a class="card" href="./LuxChaffeur/index.html">
+                <img src="./preview/luxchaffeur.jpg" alt="LuxChaffeur" loading="lazy">
+                <div class="card__body">
+                    <div class="card__title">LuxChaffeur</div>
+                    <div class="card__tags">HTML · SCSS</div>
+                </div>
+            </a>
+            <a class="card" href="./Circlechain/index.html">
+                <img src="./preview/circlechain.jpg" alt="Circlechain" loading="lazy">
+                <div class="card__body">
+                    <div class="card__title">Circlechain</div>
+                    <div class="card__tags">HTML · SCSS · JavaScript</div>
+                </div>
+            </a>
+            <a class="card" href="./Photo%20Studio/Index.html">
+                <img src="./preview/photo-studio.jpg" alt="Photo Studio" loading="lazy">
+                <div class="card__body">
+                    <div class="card__title">Photo Studio</div>
+                    <div class="card__tags">HTML · CSS</div>
+                </div>
+            </a>
+            <a class="card" href="./tour%20and%20travel/index.html">
+                <img src="./preview/tour-and-travel.jpg" alt="Tour and Travel" loading="lazy">
+                <div class="card__body">
+                    <div class="card__title">Tour and Travel</div>
+                    <div class="card__tags">HTML · SCSS · JavaScript</div>
+                </div>
+            </a>
+            <a class="card" href="./TravelAgency/index.html">
+                <img src="./preview/travelagency.jpg" alt="Travel Agency" loading="lazy">
+                <div class="card__body">
+                    <div class="card__title">Travel Agency</div>
+                    <div class="card__tags">HTML · SCSS · JavaScript</div>
+                </div>
+            </a>
+            <a class="card" href="./grid_layout/index.html">
+                <img src="./preview/grid_layout.jpg" alt="Bouncy" loading="lazy">
+                <div class="card__body">
+                    <div class="card__title">Bouncy</div>
+                    <div class="card__tags">HTML · CSS Grid</div>
+                </div>
+            </a>
+            <a class="card" href="./ActiveBox/index.html">
+                <img src="./preview/activebox.jpg" alt="ActiveBox" loading="lazy">
+                <div class="card__body">
+                    <div class="card__title">ActiveBox</div>
+                    <div class="card__tags">HTML · CSS</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
